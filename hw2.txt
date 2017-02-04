@@ -1,0 +1,13 @@
+Test cases for BFS:
+Break 5 [25]> (BFS '(ROOT))
+(ROOT)
+Break 5 [25]> (BFS '((((L E) F) T)))
+(T F L E)
+Break 5 [25]> (BFS '((R (I (G (H T))))))
+(R I G H T)
+Break 5 [25]> (BFS '(((A (B)) C (D))))
+(C D A B)
+Break 5 [25]> (BFS '((T (H R E) E)))
+(T E H R E)
+Break 5 [25]> (BFS '((A ((C ((E) D)) B))))
+(A B C D E)

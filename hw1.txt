@@ -1,0 +1,116 @@
+1. Test cases:
+* (PAD 0)
+1
+
+* (PAD 1)
+1
+
+* (PAD 2)
+1
+
+* (PAD 3)
+2
+
+* (PAD 4)
+2
+
+* (PAD 5)
+3
+
+* (PAD 6)
+4
+
+* (PAD 7)
+5
+
+* (PAD 8)
+7
+
+* (PAD 9)
+9
+
+* (PAD 10)
+12
+
+* (PAD 20)
+200
+
+* (PAD 30)
+3329
+
+* (PAD 40)
+55405
+
+* (PAD 50)
+922111
+
+* (PAD 60)
+15346786
+
+* (PAD 65)
+62608681
+
+* (PAD 70)
+255418101
+
+When the program is tested for larger values (ie. 60, 65, 70 ...), it takes increasingly longer time to get the result. This is because when the number gets larger a lot more recursion functions are called, and therefore many more addition operations in each recursion are executed.
+
+2.Test cases:
+* (SUMS 0)
+0
+
+* (SUMS 1)
+0
+
+* (SUMS 2)
+0
+
+* (SUMS 3)
+1
+
+* (SUMS 4)
+1
+
+* (SUMS 5)
+2
+
+* (SUMS 6)
+3
+
+* (SUMS 7)
+4
+
+* (SUMS 8)
+6
+
+* (SUMS 9)
+8
+
+* (SUMS 10)
+11
+
+The relationship is (SUMS N) = (PAD N) - 1. This is because all the numbers are recursed down to N=1, the final answer s is the result of s 1's adding up together, which takes s-1 addition operations.
+
+3. Test cases:
+* (ANON '42)
+?
+
+* (ANON 'FOO)
+?
+
+* (ANON '(((L E) F) T))
+(((? ?) ?) ?)
+
+* (ANON '(5 FOO 3.1 -0.2))
+(? ? ? ?)
+
+* (ANON '(1 (FOO 3.1) -0.2))
+(? (? ?) ?)
+
+* (ANON '(((1 2) (FOO 3.1)) (BAR -0.2)))
+(((? ?) (? ?)) (? ?))
+
+* (ANON '(R (I (G (H T)))))
+(? (? (? (? ?))))
+
+
